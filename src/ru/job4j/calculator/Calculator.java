@@ -4,8 +4,8 @@ public class Calculator {
     public static void main(String[] args) {
         int one = 1;
         int two = 2;
-        int onePlusTwo = one + two;
-        System.out.println(onePlusTwo);
+        int result = one + two;
+        System.out.println(result);
 
         int six = 6;
         int four = 4;
@@ -13,10 +13,10 @@ public class Calculator {
 
         int sixDivTwo = six / two;
         int fiveMinusTwo = five - two;
-        int fourTimeTwo = four * two;
+        result = four * two;
         System.out.println(sixDivTwo);
         System.out.println(fiveMinusTwo);
-        System.out.println(fourTimeTwo);
+        System.out.println(result);
 
     }
 }
