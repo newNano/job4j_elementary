@@ -9,7 +9,8 @@ public class ArgMethod {
         ArgMethod.hello(name);
         ArgMethod.hello(name);
     }
-
+    int[] b = {4,5,6};
+    int c = b.length;
     public static void hello(String name) {
         System.out.println("Hello, " + name);
     }
