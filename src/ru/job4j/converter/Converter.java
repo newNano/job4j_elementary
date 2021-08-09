@@ -27,6 +27,46 @@ public class Converter {
         dollar = 50;
         float rubFromDollars = Converter.dollarToRub(dollar);
         System.out.println(dollar + " dollar are " + rubFromDollars + " rub");
+
+        //
+        // Tests
+        System.out.println("\n\nTests");
+        float inRub = 210;
+        float expectedRubToEuro = 3;
+        float out = Converter.rubleToEuro(inRub);
+        boolean passed = expectedRubToEuro == out;
+        System.out.println(inRub + " rubles are " + expectedRubToEuro + " euros . Test result: " + passed);
+
+        inRub = 180;
+        float expectedRubToDollar = 3;
+        out = Converter.rubleToDollar(inRub);
+        passed = expectedRubToDollar == out;
+        System.out.println(inRub + " rubles are " + expectedRubToDollar + " dollars . Test result: " + passed);
+
+        float inDollar = 10;
+        float expectedDollarToRub = 600;
+        out = Converter.dollarToRub(inDollar);
+        passed = expectedDollarToRub == out;
+        System.out.println(inDollar + " dollar are " + expectedDollarToRub + " rubles . Test result: " + passed);
+
+        inDollar = 70;
+        float expectedDollarToEuro = 60;
+        out = Converter.dollarToEuro(inDollar);
+        passed = expectedDollarToEuro == out;
+        System.out.println(inDollar + " dollar are " + expectedDollarToEuro + " euros . Test result: " + passed);
+
+        float inEuro = 6;
+        float expectedEuroToRub = 420;
+        out = Converter.euroToRub(inEuro);
+        passed = expectedEuroToRub == out;
+        System.out.println(inEuro + " euro are " + expectedEuroToRub + " rubles . Test result: " + passed);
+
+        inEuro = 60;
+        float expectedEuroToDollar = 70;
+        out = Converter.euroToDollar(inEuro);
+        passed = expectedEuroToDollar == out;
+        System.out.println(inEuro + " euro are " + expectedEuroToDollar + " dollars . Test result: " + passed);
+
     }
 
     private static float dollarToRub(float dollar) {
