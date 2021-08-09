@@ -1,5 +1,6 @@
 package ru.job4j.calculator;
 
+@SuppressWarnings("checkstyle:EmptyLineSeparator")
 public class MathFunc {
 
     public static void main(String[] args) {
@@ -21,6 +22,5 @@ public class MathFunc {
         int y = 1 / x;
         return y;
     }
-
 
 }

@@ -6,7 +6,7 @@ public class Converter {
 
         float rub = 140;
         float euroFromRub = Converter.rubleToEuro(rub);
-        System.out.println(rub +" rubles are " + euroFromRub + " euros.");
+        System.out.println(rub + " rubles are " + euroFromRub + " euros.");
 
         rub = 180;
         float dollarFromRub = Converter.rubleToDollar(rub);
