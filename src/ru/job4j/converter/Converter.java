@@ -69,22 +69,22 @@ public class Converter {
 
     }
 
-    private static float dollarToRub(float dollar) {
+    public static float dollarToRub(float dollar) {
         float rsl = dollar * 60;            //формула перевода доллара в рубли.
         return rsl;
     }
 
-    private static float dollarToEuro(float dollar) {
+    public static float dollarToEuro(float dollar) {
         float rsl = (float) 60 / 70 * dollar;  //формула перевода доллара в евро.
         return rsl;
     }
 
-    private static float euroToRub(float euro) {
+    public static float euroToRub(float euro) {
         float rsl = euro * 70;  //формула перевода евро в рубли.
         return rsl;
     }
 
-    private static float euroToDollar(float euro) {
+    public static float euroToDollar(float euro) {
         float rsl = (float) 70 / 60 * euro; //формула перевода евро в доллары.
         return rsl;
     }
