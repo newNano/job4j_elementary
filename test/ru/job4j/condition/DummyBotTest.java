@@ -12,7 +12,7 @@ public class DummyBotTest {
         String expected = "Привет, умник.";
         Assert.assertEquals(expected, result);
     }
-
+//
     @Test
     public void whenByeBot() {
         String in = "Пока.";
