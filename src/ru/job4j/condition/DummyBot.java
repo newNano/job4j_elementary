@@ -7,7 +7,7 @@ public class DummyBot {
         rsl = DummyBot.answer("Пока.");
         System.out.println(rsl);
     }
-//
+
     public static String answer(String question) {
         String rsl = "Это ставит меня в тупик. Задайте другой вопрос.";
         if (question.equals("Привет, Бот.")) {
