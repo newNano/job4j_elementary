@@ -8,6 +8,7 @@ public class Slash {
         draw(5);
     }
 
+    //
     public static void draw(int size) {
         int indexRight = size - 1;
         for (int row = 0; row < size; row++) {
