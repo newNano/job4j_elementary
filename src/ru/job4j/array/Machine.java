@@ -6,16 +6,18 @@ public class Machine {
     public static int[] change(int money, int price) {
         int[] coins = {10, 5, 2, 1};
         int moneyChange = money - price;
-        int[] rsl = new int[0];
+        int[] rsl = new int[100];
+        int count = 0;
 
-        for (int i = 0; i < coins.length; i++) {
-            if (moneyChange >= coins[i]) {
-                rsl = Arrays.copyOf(rsl, rsl.length + 1);
-                rsl[rsl.length - 1] = coins[i];
-                moneyChange -= coins[i];
-                i--;
+        while (moneyChange > 0) {
+            for (int coin : coins) {
+                if (moneyChange >= coin) {
+                    rsl[count++] = coin;
+                    moneyChange -= coin;
+                    break;
+                }
             }
         }
-        return rsl;
+        return Arrays.copyOf(rsl, count);
     }
 }
