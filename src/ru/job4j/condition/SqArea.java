@@ -10,7 +10,6 @@ public class SqArea {
     public static double calculateSquare(double p, double k) {
         double h = p / (2 * (k + 1));
         double len = h * k;
-
         double square = len * h;
         return square;
     }
